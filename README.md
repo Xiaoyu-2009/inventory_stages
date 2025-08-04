@@ -2,8 +2,6 @@
 
 ---
 
-## 中文
-
 ### 使用方法
 
 在 `kubejs/server_scripts/` 目录下创建js文件：
@@ -26,8 +24,6 @@ PlayerEvents.loggedIn(event => {
 
 ---
 
-## English
-
 ### Usage
 
 Place script in `kubejs/server_scripts/` directory:
@@ -45,5 +41,6 @@ PlayerEvents.loggedIn(event => {
 - `event.setRow1Stage(stageName)` - Set stage requirement for inventory row 1
 - `event.setRow2Stage(stageName)` - Set stage requirement for inventory row 2  
 - `event.setRow3Stage(stageName)` - Set stage requirement for inventory row 3
+
 
 ### By default, no stages are unlocked and only the quick bar can be used.
