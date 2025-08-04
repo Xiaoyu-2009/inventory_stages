@@ -1,0 +1,1 @@
+inventory.stages.kubejs.InventoryStagesKubeJSPlugin
