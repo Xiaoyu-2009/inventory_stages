@@ -34,10 +34,10 @@ Place script in `kubejs/server_scripts/` directory:
 
 ```javascript
 PlayerEvents.loggedIn(event => {
-    event.setRow1Stage("basic_inventory");
-    event.setRow2Stage("advanced_inventory");
-    event.setRow3Stage("expert_inventory");
-});
+    event.setRow1Stage("basic_inventory")
+    event.setRow2Stage("advanced_inventory")
+    event.setRow3Stage("expert_inventory")
+})
 ```
 
 ### API Methods
@@ -47,3 +47,4 @@ PlayerEvents.loggedIn(event => {
 - `event.setRow3Stage(stageName)` - Set stage requirement for inventory row 3
 
 ### By default, no stages are unlocked and only the quick bar can be used.
+
