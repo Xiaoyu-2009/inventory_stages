@@ -20,7 +20,7 @@ PlayerEvents.loggedIn(event => {
 - `event.setRow2Stage(stageName)` - 设置背包第二行的阶段要求
 - `event.setRow3Stage(stageName)` - 设置背包第三行的阶段要求
 
-### 一些说明
+### 说明
 
 - 默认未解锁任何阶段，只有快捷栏可使用
 - `inventory_row_1`、`inventory_row_2`、`inventory_row_3` 为默认提供的阶段
@@ -46,7 +46,7 @@ PlayerEvents.loggedIn(event => {
 - `event.setRow2Stage(stageName)` - Set stage requirement for inventory row 2  
 - `event.setRow3Stage(stageName)` - Set stage requirement for inventory row 3
 
-### Some instructions
+### Notes
 
 - By default, no stages are unlocked and only the hotbar is accessible
 - `inventory_row_1`, `inventory_row_2`, `inventory_row_3` are default provided stages
