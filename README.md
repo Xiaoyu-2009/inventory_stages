@@ -22,9 +22,9 @@ PlayerEvents.loggedIn(event => {
 
 ### 说明
 
-- 默认未解锁任何阶段，只有快捷栏可使用
+- 默认未解锁任何阶段 只有快捷栏可使用
 - `inventory_row_1`、`inventory_row_2`、`inventory_row_3` 为默认提供的阶段
-- 通过游戏阶段指令 `add` 逐渐恢复对应背包行，`remove` 则相反
+- 可以通过游戏阶段的指令 `add` 则逐渐恢复对应的背包对应行 `remove` 则相反
 
 ---
 
