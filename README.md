@@ -12,9 +12,13 @@ InventoryStagesEvents.playerLoggedIn(event => {
     event.removeSetRow1Stage("inventory_row_1")  // 设置第1行不需要"inventory_row_1"阶段
     event.removeSetRow2Stage("inventory_row_2")  // 设置第2行不需要"inventory_row_2"阶段
     event.removeSetRow3Stage("inventory_row_3")  // 设置第3行不需要"inventory_row_3"阶段
+    // 默认玩家带有inventory_hotbar=玩家快捷栏默认不会被禁用
+    /* event.removeSetRow4Stage("inventory_hotbar")  // 设置第4行不需要"inventory_hotbar"阶段[快捷栏] */
+
     event.addSetRow1Stage("1")  // 设置第1行需要"1"阶段
     event.addSetRow2Stage("2")  // 设置第2行需要"2"阶段
     event.addSetRow3Stage("3")  // 设置第3行需要"3"阶段
+    /* event.addSetRow4Stage("4")  // 设置第4行需要"4"阶段[快捷栏] */
 })
 
 // 调用全局方法自动重载配置 让/reload立即生效
@@ -48,9 +52,13 @@ InventoryStagesEvents.playerLoggedIn(event => {
     event.removeSetRow1Stage("inventory_row_1")  // Remove "inventory_row_1" stage requirement for row 1
     event.removeSetRow2Stage("inventory_row_2")  // Remove "inventory_row_2" stage requirement for row 2
     event.removeSetRow3Stage("inventory_row_3")  // Remove "inventory_row_3" stage requirement for row 3
+    // Default player has inventory_hotbar=player hotbar is not disabled by default
+    /* event.removeSetRow4Stage("inventory_hotbar")  // Remove "inventory_hotbar" stage requirement for row 4[hotbar] */
+    
     event.addSetRow1Stage("1")  // Add "1" stage requirement for row 1
     event.addSetRow2Stage("2")  // Add "2" stage requirement for row 2
     event.addSetRow3Stage("3")  // Add "3" stage requirement for row 3
+    /* event.addSetRow4Stage("4")  // Add "4" stage requirement for row 4[hotbar] */
 })
 
 // Call global method to auto-reload config, making /reload take effect immediately
