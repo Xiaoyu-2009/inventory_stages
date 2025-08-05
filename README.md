@@ -37,6 +37,7 @@ reloadInventoryStages.run()
 ### 说明
 
 - 默认未解锁任何阶段 只有快捷栏可使用
+- `inventory_hotbar` 模组给予玩家默认带有的阶段（玩家快捷栏默认不会被禁用）
 - `inventory_row_1`、`inventory_row_2`、`inventory_row_3` 为默认提供的阶段
 - 可以通过游戏阶段的指令 `add` 则逐渐恢复对应的背包对应行 `remove` 则相反
 
@@ -54,7 +55,7 @@ InventoryStagesEvents.playerLoggedIn(event => {
     event.removeSetRow3Stage("inventory_row_3")  // Remove "inventory_row_3" stage requirement for row 3
     // Default player has inventory_hotbar=player hotbar is not disabled by default
     /* event.removeSetRow4Stage("inventory_hotbar")  // Remove "inventory_hotbar" stage requirement for row 4[hotbar] */
-    
+
     event.addSetRow1Stage("1")  // Add "1" stage requirement for row 1
     event.addSetRow2Stage("2")  // Add "2" stage requirement for row 2
     event.addSetRow3Stage("3")  // Add "3" stage requirement for row 3
@@ -77,5 +78,6 @@ reloadInventoryStages.run()
 ### Notes
 
 - By default, no stages are unlocked and only the hotbar is accessible
+- `inventory_hotbar` is a stage that the mod gives players by default (player hotbar is not disabled by default)
 - `inventory_row_1`, `inventory_row_2`, `inventory_row_3` are default provided stages
 - Use game stage commands `add` to gradually unlock inventory rows, `remove` for the opposite
